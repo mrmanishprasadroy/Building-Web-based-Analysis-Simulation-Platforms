@@ -15,7 +15,7 @@ def integrate(*args, **kwargs):
 
         #celery -A worker worker --loglevel=debug
         # at worker side:
-        # set FORKED_BY_MULTIPROCESSING = 1
+        # set $env:FORKED_BY_MULTIPROCESSING = 1
         # then
         # celery -A myworker worker --loglevel=info
         # done!
