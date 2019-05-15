@@ -19,3 +19,5 @@ def integrate(*args, **kwargs):
         # then
         # celery -A myworker worker --loglevel=info
         # done!
+		# $env:FORKED_BY_MULTIPROCESSING = 1; celery -A tasks worker --loglevel=info
+		# $env:FORKED_BY_MULTIPROCESSING = 1; celery -A tasks beat --loglevel=info
